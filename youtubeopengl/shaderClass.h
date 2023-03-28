@@ -22,6 +22,12 @@ public:
 	void Activate();
 	//删除shade Program
 	void Delete();
+
+private:
+
+	//判断着色器的生成是否有问题
+	void compileErrors(unsigned int shader, const char* type);
+
 };
 
 

@@ -16,6 +16,9 @@
     <Filter Include="源文件\Shaders">
       <UniqueIdentifier>{3db26e41-772e-4c22-9095-b0bcb8764ce1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\Textures">
+      <UniqueIdentifier>{4c0f142f-4392-4e10-b78c-ae683554fa2f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c">
@@ -34,6 +37,12 @@
       <Filter>资源文件</Filter>
     </ClCompile>
     <ClCompile Include="vao.cpp">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stb.cpp">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
       <Filter>资源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -58,5 +67,13 @@
     <ClInclude Include="VAO.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="dog.png">
+      <Filter>源文件\Textures</Filter>
+    </Image>
   </ItemGroup>
 </Project>
