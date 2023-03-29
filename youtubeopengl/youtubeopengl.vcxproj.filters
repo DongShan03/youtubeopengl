@@ -45,12 +45,21 @@
     <ClCompile Include="Texture.cpp">
       <Filter>资源文件</Filter>
     </ClCompile>
+    <ClCompile Include="camera.cpp">
+      <Filter>资源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="default.vert">
       <Filter>源文件\Shaders</Filter>
     </None>
     <None Include="default.frag">
+      <Filter>源文件\Shaders</Filter>
+    </None>
+    <None Include="light.vert">
+      <Filter>源文件\Shaders</Filter>
+    </None>
+    <None Include="light.frag">
       <Filter>源文件\Shaders</Filter>
     </None>
   </ItemGroup>
@@ -70,9 +79,24 @@
     <ClInclude Include="Texture.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="dog.png">
+      <Filter>源文件\Textures</Filter>
+    </Image>
+    <Image Include="Spec.png">
+      <Filter>源文件\Textures</Filter>
+    </Image>
+    <Image Include="Albedo.png">
+      <Filter>源文件\Textures</Filter>
+    </Image>
+    <Image Include="AO.png">
+      <Filter>源文件\Textures</Filter>
+    </Image>
+    <Image Include="Normal.png">
       <Filter>源文件\Textures</Filter>
     </Image>
   </ItemGroup>

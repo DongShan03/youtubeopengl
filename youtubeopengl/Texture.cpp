@@ -1,7 +1,7 @@
 #include "Texture.h"
 
 
-Texture::Texture(const char* image, GLenum texType, GLenum slot, GLenum format, GLenum pixelType)
+Texture::Texture(const char* image, GLenum texType, GLuint slot, GLenum format, GLenum pixelType)
 {
 	type = texType;
 	//图像参数
@@ -14,7 +14,8 @@ Texture::Texture(const char* image, GLenum texType, GLenum slot, GLenum format, 
 	glGenTextures(1, &ID);
 
 	//指定图像到Texture Unit
-	glActiveTexture(slot);
+	glActiveTexture(GL_TEXTURE0 + slot);
+	unit = slot;
 	glBindTexture(texType, ID);
 
 	//配置用于使图像变小或变大的算法类型
@@ -43,6 +44,7 @@ void Texture::texUnit(Shader& shader, const char* uniform, GLuint unit)
 
 void Texture::Bind()
 {
+	glActiveTexture(GL_TEXTURE0 + unit);
 	glBindTexture(type, ID);
 }
 
